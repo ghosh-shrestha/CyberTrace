@@ -1,0 +1,85 @@
+/* =========================
+   Alerts Page
+========================= */
+
+.alerts-page {
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #0a0a0a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.alerts-header {
+    margin-bottom: 30px;
+}
+
+.alerts-header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+.alerts-header p {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Alerts Table
+========================= */
+
+.alerts-table-container {
+    background-color: #151515;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 22px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.alerts-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.alerts-table th,
+.alerts-table td {
+    padding: 14px 10px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.alerts-table th {
+    color: #999;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.alerts-table td {
+    font-size: 14px;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .alerts-page {
+        padding: 20px;
+    }
+
+    .alerts-table {
+        min-width: 650px;
+    }
+
+}

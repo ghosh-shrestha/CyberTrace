@@ -1,0 +1,238 @@
+/* =========================
+   Dashboard Page
+========================= */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #0a0a0a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   Sidebar
+========================= */
+
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background-color: #151515;
+    border-right: 1px solid #333;
+    padding: 25px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    margin: 0;
+    color: #e50914;
+    font-size: 24px;
+}
+
+
+/* =========================
+   Sidebar Navigation
+========================= */
+
+.sidebar nav {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar nav a {
+    margin: 0;
+    padding: 12px;
+    color: #b5b5b5;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar nav a:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+/* =========================
+   Main Content
+========================= */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Dashboard Header
+========================= */
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+.dashboard-header p {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Overview Cards
+========================= */
+
+.overview-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.overview-card {
+    flex: 1;
+    padding: 22px;
+    background-color: #151515;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.overview-card p {
+    margin: 0 0 12px;
+    color: #999;
+    font-size: 14px;
+}
+
+.overview-card h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+/* =========================
+   Recent Incidents
+========================= */
+
+.recent-incidents {
+    margin-top: 30px;
+    background-color: #151515;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 22px;
+    box-sizing: border-box;
+}
+
+.recent-incidents h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+.recent-incidents table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-incidents th,
+.recent-incidents td {
+    padding: 14px 10px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.recent-incidents th {
+    color: #999;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.recent-incidents td {
+    font-size: 14px;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+
+    .overview-cards {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+
+    .sidebar nav {
+        margin-top: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .recent-incidents {
+        overflow-x: auto;
+    }
+
+    .recent-incidents table {
+        min-width: 600px;
+    }
+
+}
+
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 400px) {
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 26px;
+    }
+
+    .overview-card {
+        padding: 18px;
+    }
+
+}

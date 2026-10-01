@@ -1,0 +1,211 @@
+/* =========================
+   Incidents Page
+========================= */
+
+.incidents-page {
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #0a0a0a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.incidents-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.incidents-header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+.incidents-header p {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Create Incident Button
+========================= */
+
+.create-incident-button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.create-incident-button:hover {
+    background-color: #b20710;
+}
+
+
+/* =========================
+   Incident Form
+========================= */
+
+.incident-form-container {
+    margin-bottom: 30px;
+    padding: 22px;
+    background-color: #151515;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.incident-form-container h2 {
+    margin: 0 0 25px;
+    font-size: 20px;
+}
+
+.incident-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.incident-form-container label {
+    color: #b5b5b5;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.incident-form-container input,
+.incident-form-container select,
+.incident-form-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.incident-form-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* =========================
+   Form Buttons
+========================= */
+
+.incident-form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.submit-incident-button,
+.cancel-incident-button {
+    padding: 11px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.submit-incident-button {
+    border: none;
+    background-color: #e50914;
+    color: white;
+}
+
+.submit-incident-button:hover {
+    background-color: #b20710;
+}
+
+.cancel-incident-button {
+    background-color: transparent;
+    color: #e50914;
+    border: 1px solid #e50914;
+}
+
+.cancel-incident-button:hover {
+    background-color: #e50914;
+    color: white;
+}
+
+
+/* =========================
+   Incidents Table
+========================= */
+
+.incidents-table-container {
+    background-color: #151515;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 22px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.incidents-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.incidents-table th,
+.incidents-table td {
+    padding: 14px 10px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.incidents-table th {
+    color: #999;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.incidents-table td {
+    font-size: 14px;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .incidents-page {
+        padding: 20px;
+    }
+
+    .incidents-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .incident-form-buttons {
+        flex-direction: column;
+    }
+
+    .submit-incident-button,
+    .cancel-incident-button {
+        width: 100%;
+    }
+
+    .incidents-table {
+        min-width: 650px;
+    }
+}
