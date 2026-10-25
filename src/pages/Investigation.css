@@ -1,0 +1,144 @@
+
+.investigation-page {
+    min-height: 100vh;
+    padding: 30px;
+    background: #0a0a0a;
+    color: #f5f5f5;
+}
+
+.investigation-header {
+    margin-bottom: 28px;
+}
+
+.investigation-header h1 {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.investigation-header p {
+    color: #a3a3a3;
+}
+
+.investigation-form-container,
+.investigation-list {
+    background: #151515;
+    padding: 24px;
+    margin-bottom: 25px;
+    border: 1px solid #2b2b2b;
+    border-radius: 10px;
+}
+
+.investigation-form-container h2,
+.investigation-list h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.investigation-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.investigation-form-container label {
+    color: #d4d4d4;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.investigation-form-container input,
+.investigation-form-container select,
+.investigation-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    background: #0a0a0a;
+    color: #f5f5f5;
+    border: 1px solid #383838;
+    border-radius: 6px;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.investigation-form-container input:focus,
+.investigation-form-container select:focus,
+.investigation-form-container textarea:focus {
+    outline: none;
+    border-color: #e50914;
+}
+
+.investigation-form-container select option {
+    background: #151515;
+    color: #f5f5f5;
+}
+
+.investigation-form-container button {
+    padding: 12px;
+    margin-top: 10px;
+    background: #e50914;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.investigation-form-container button:hover {
+    background: #bd0610;
+}
+
+.investigation-list > p {
+    color: #a3a3a3;
+}
+
+.investigation-card {
+    padding: 20px;
+    margin-top: 15px;
+    background: #101010;
+    border: 1px solid #303030;
+    border-left: 4px solid #e50914;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.investigation-card h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.investigation-card p {
+    color: #c7c7c7;
+    line-height: 1.6;
+}
+
+.investigation-card strong {
+    color: #ffffff;
+}
+
+.investigation-card button {
+    padding: 9px 14px;
+    margin-top: 8px;
+    background: transparent;
+    color: #ff5b64;
+    border: 1px solid #e50914;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.investigation-card button:hover {
+    background: #e50914;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .investigation-page {
+        padding: 15px;
+    }
+
+    .investigation-form-container,
+    .investigation-list {
+        padding: 16px;
+    }
+}
+
